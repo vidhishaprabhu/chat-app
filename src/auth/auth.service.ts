@@ -4,6 +4,7 @@ import { JwtService } from '@nestjs/jwt';
 import * as bcrypt from 'bcrypt';
 @Injectable()
 export class AuthService {
+  //constructor
   constructor(private usersService:UsersService,private jwtService: JwtService) {}
   
   async register(email:string,password:string,displayName?:string){ 
